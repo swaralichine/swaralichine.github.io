@@ -1,0 +1,131 @@
+.work-section {
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.work-list {
+  margin-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.work-row {
+  display: grid;
+  grid-template-columns: 48px 1fr auto auto;
+  align-items: center;
+  gap: 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
+  transition: background 0.25s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.work-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.work-row:hover .work-num {
+  color: var(--accent);
+}
+
+.work-row:hover .work-arrow {
+  transform: rotate(45deg);
+  color: var(--accent);
+}
+
+.work-num {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: color 0.25s;
+}
+
+.work-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.work-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.work-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.work-tag--panw {
+  background: rgba(34, 211, 238, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  color: var(--accent);
+}
+
+.work-tag--award {
+  background: rgba(251, 191, 36, 0.1);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  color: #fbbf24;
+}
+
+.work-tag--ai {
+  background: rgba(167, 139, 250, 0.1);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  color: #a78bfa;
+}
+
+.work-sub {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.work-tools {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.work-arrow {
+  font-size: 18px;
+  color: var(--muted);
+  transition: transform 0.25s, color 0.25s;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .work-row {
+    grid-template-columns: 32px 1fr 24px;
+    gap: 16px;
+  }
+
+  .work-tools {
+    display: none;
+  }
+
+  .work-title {
+    font-size: 15px;
+  }
+
+  .work-section {
+    padding: 80px 0;
+  }
+}

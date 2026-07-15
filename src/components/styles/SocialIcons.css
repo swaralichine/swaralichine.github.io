@@ -1,0 +1,39 @@
+.social-icons-fixed {
+  position: fixed;
+  left: 24px;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 0;
+}
+
+.social-icons-fixed::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+}
+
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--muted);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.social-icon-link:hover {
+  color: var(--text);
+  transform: rotate(15deg);
+}
+
+@media (max-width: 900px) {
+  .social-icons-fixed {
+    display: none;
+  }
+}

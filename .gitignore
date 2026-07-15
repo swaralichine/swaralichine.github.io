@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Vite
+*.local
+
+# TypeScript build cache
+tsconfig.app.tsbuildinfo
+tsconfig.node.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Env files
+.env
+.env.local
+.env.*.local

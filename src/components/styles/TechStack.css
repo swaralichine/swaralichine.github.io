@@ -1,0 +1,92 @@
+.techstack-section {
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.techstack-marquees {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 64px;
+}
+
+.tech-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  margin: 0 8px;
+  letter-spacing: 0.05em;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.section-sublabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.cert-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(34, 211, 238, 0.3);
+}
+
+.cert-icon {
+  font-size: 28px;
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.cert-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cert-provider {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+  .techstack-section {
+    padding: 80px 0;
+  }
+}

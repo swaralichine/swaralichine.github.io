@@ -1,0 +1,125 @@
+.about-section {
+  padding: 120px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 28px;
+  display: block;
+}
+
+.about-heading {
+  font-size: clamp(36px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.about-heading .word {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.about-heading .word span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+
+.about-para {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.about-currently {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 36px;
+  padding: 12px 16px;
+  background: rgba(34, 211, 238, 0.04);
+  border: 1px solid rgba(34, 211, 238, 0.15);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+}
+
+.about-currently-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.about-currently-text {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.about-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.about-stat-num {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.about-stat-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-section {
+    padding: 80px 0;
+  }
+
+  .about-stats {
+    gap: 28px;
+  }
+
+  .about-stat-num {
+    font-size: 36px;
+  }
+}

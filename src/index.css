@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg: #0d0814;
+  --accent: #a855f7;
+  --accent2: #7c3aed;
+  --text: #f5f0ff;
+  --muted: rgba(245, 240, 255, 0.45);
+  --border: rgba(168, 85, 247, 0.12);
+  --c-width: 88%;
+  --c-max: 1280px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: var(--c-width);
+  max-width: var(--c-max);
+  margin: 0 auto;
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--accent);
+}
+
+/* Shared section utilities */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-family: 'Courier New', monospace;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.section-heading {
+  font-size: clamp(36px, 4.5vw, 60px);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+
+.section-header {
+  margin-bottom: 64px;
+}
